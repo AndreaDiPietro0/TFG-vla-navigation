@@ -33,7 +33,7 @@ On phone photos from Granada, far from the training data, NoMaD's diffusion poli
 - inside a house (corridor)
 - straight street with vehicles and pedestrians
 - straight street
-- street with a bend (T4)
+- street with a bend
 
 From each trajectory, three scenarios are built:
 - **A:** the robot has just arrived (predicted distance should be near zero)
