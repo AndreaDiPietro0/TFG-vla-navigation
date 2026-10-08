@@ -54,7 +54,7 @@ From each trajectory, three scenarios are built:
 | Inference cost | One forward pass | Denoising loop |
 
 ![Trajectory T4: street with a bend](figures/granada_waypoints_t4.png)
-*Trajectory T4 (street with a bend). Left: real photo of the route, showing the curve of the roadway. Right: top-down view of the waypoints predicted by ViNT and NoMaD.*
+*Trajectory T4 (street with a bend). Left: real photo of the route. Right: top-down view of the waypoints predicted by ViNT and NoMaD.*
 
 - **Global vs. local planner.** ViNT outputs a long trajectory in one shot; NoMaD outputs short steps meant to be re-applied in a 4 Hz control loop. A single static call only shows NoMaD's first stretch.
 - **No reversing.** Both models predicted forward-only waypoints even when the goal was behind. Since the architectures differ, my hypothesis is that this comes from forward-dominated training data.
